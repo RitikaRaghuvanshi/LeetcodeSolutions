@@ -12,9 +12,8 @@ public:
             mp[t[i]]--;
         }
         for(auto p:mp){
-            if(p.second!=0){
-                return false;
-            }
+            if(p.second!=0)
+            return false;
         }
         return true;
         
