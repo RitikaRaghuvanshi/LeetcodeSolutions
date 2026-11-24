@@ -6,7 +6,7 @@ public:
         }
         vector<int>count1(26,0);
         vector<int>count2(26,0);
-        for(int i =0;i<s1.length();i++){
+        for(int i=0;i<s1.length();i++){
             count1[s1[i]-'a']++;
             count2[s2[i]-'a']++;
         }
@@ -17,11 +17,10 @@ public:
         for(int i =s1.length();i<s2.length();i++){
             count2[s2[i]-'a']++;
             count2[s2[j]-'a']--;
-        
-        if(count1==count2)
-            return true;
-            j++;
-        
+            if(count1==count2)
+                return true;
+                j++;
+            
         }
         return false;
         
